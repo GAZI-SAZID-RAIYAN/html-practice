@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ICT Division - Student Registration Form</title>
+</head>
+<body>
+
+    <h2>ICT Division - Student Registration Form</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="father">Father's Name:</label><br>
+            <input type="text" id="father" name="father"><br><br>
+
+            <label for="mother">Mother's Name:</label><br>
+            <input type="text" id="mother" name="mother"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="address">Present Address:</label><br>
+            <textarea id="address" name="address" rows="3" cols="30"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="ssc">SSC GPA:</label><br>
+            <input type="number" id="ssc" name="ssc" step="0.01"><br><br>
+
+            <label for="hsc">HSC GPA:</label><br>
+            <input type="number" id="hsc" name="hsc" step="0.01"><br><br>
+
+            <label for="department">Department:</label><br>
+            <select id="department" name="department">
+                <option value="cse">CSE</option>
+                <option value="eee">EEE</option>
+                <option value="bba">BBA</option>
+                <option value="english">English</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Selection</legend>
+
+            <label>Courses:</label><br>
+            <input type="checkbox" name="course" value="web"> Web Development<br>
+            <input type="checkbox" name="course" value="graphics"> Graphic Design<br>
+            <input type="checkbox" name="course" value="digital"> Digital Marketing<br>
+            <input type="checkbox" name="course" value="cyber"> Cyber Security<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload Documents</legend>
+
+            <label for="photo">Upload Photo:</label><br>
+            <input type="file" id="photo" name="photo"><br><br>
+
+            <label for="certificate">Upload Certificate:</label><br>
+            <input type="file" id="certificate" name="certificate"><br><br>
+        </fieldset>
+
+        <input type="checkbox" required> I declare that all information is correct.
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
